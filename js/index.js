@@ -42,17 +42,17 @@ window.onload = function () {
 
 window.onscroll = function () {
 
-    const topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
-    const mySidenav = document.getElementById("mySidenav");//获取到导航栏id
-
-    if (topScroll <= 250) {
-        //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-        mySidenav.style.position = 'static';
-    } else {
-        //当滚动距离大于250px时执行下面的东西
-        mySidenav.style.position = 'fixed';
-        // mySidenav.style.top = '6%';
-        // mySidenav.style.right = '6%';
-        console.log(topScroll)
-    }
+    // const topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
+    // const mySidenav = document.getElementById("mySidenav");//获取到导航栏id
+    //
+    // if (topScroll <= 250) {
+    //     //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+    //     mySidenav.style.position = 'static';
+    // } else {
+    //     //当滚动距离大于250px时执行下面的东西
+    //     mySidenav.style.position = 'fixed';
+    //     // mySidenav.style.top = '6%';
+    //     // mySidenav.style.right = '6%';
+    //     console.log(topScroll)
+    // }
 }
