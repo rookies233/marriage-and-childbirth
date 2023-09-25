@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 千图笔锋手写体;
+  src: url(../font/千图笔锋手写体.ttf);
+}
+
+@font-face {
+  font-family: 朱雀仿宋;
+  src: url(../font/朱雀仿宋.ttf);
+}
+
+@pink: #ECBBCB;
+@blue: #abdffa;
+
+/*html {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  /* 背景图片 */
+  background-image: url(../img/banner.jpg);
+  /* 背景图片填充 */
+  background-size: cover;
+  /* 背景图片居中 */
+  background-position: center;
+  /* 背景图片不重复 */
+  background-repeat: no-repeat;
+
+  /* 高度充满屏幕 */
+  height: 100vh;
+
+  /*!* content居中 *!*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+  /*!* 垂直居中 *!*/
+  /*position: relative;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+}
+
+.content {
+  font-family: "千图笔锋手写体", sans-serif;
+
+  /* 白色字体 */
+  color: #fff;
+
+  /* 居中 */
+  text-align: center;
+
+  /* 垂直居中 */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* 左右居中 */
+  margin: 0 auto;
+  width: 80%;
+
+  font-size: 45px;
+
+  /* 描边 */
+  text-shadow: 0 0 10px #000;
+
+  h1 {
+    /* 靠左 */
+    text-align: left;
+  }
+
+  span {
+    /* 粉色字体 */
+    color: @pink;
+
+    /* 字体加大 */
+    font-size: 100px;
+  }
+}
+
+/* ------------------- */
+
+.chart {
+  /* 左右居中 */
+  margin: 0 auto;
+  //width: 75%;
+}
+
+.main-content {
+  /* 背景颜色 */
+  background-color: #fcfbf8;
+
+  img {
+    /* 左右居中 */
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+  }
+}
+
+.container {
+  /* 左右居中 */
+  margin: 0 auto;
+  width: 75%;
+
+  /*行距*/
+  line-height: 2em;
+
+  /* 上下padding */
+  padding: 5em 0;
+
+  p {
+    /* 段落间距 */
+    margin-bottom: 2em;
+  }
+}
+
+.part {
+  border-bottom: 2px dashed rgb(128, 128, 128);
+
+  /* 左右padding */
+  padding: 5em 15em;
+}
+
+.title {
+  /* 左右居中 */
+  text-align: center;
+
+  /*!*行距*!*/
+  /*line-height: 2em;*/
+
+  /* 底部margin */
+  margin: 0 auto 2em;
+
+  font-family: "朱雀仿宋", sans-serif;
+  font-size: 25px;
+}
+
+/* ------------------- */
+
+/* 为 sidenav 内的链接设置样式 */
+#mySidenav a {
+  position: fixed; /* 相对于浏览器窗口定位它们 */
+  left: -80px; /* 将它们放在屏幕之外 */
+
+  transition: 0.3s; /* 在悬停时添加过渡 */
+  padding: 15px; /* 15px 内边距 */
+  width: 100px; /* 设置特定宽度 */
+  text-decoration: none; /* 删除下划线 */
+  font-size: 20px; /* 增加字体大小 */
+  color: white; /* 白色文本颜色 */
+  border-radius: 0 50px 50px 0; /* 右上角和右下角的圆角 */
+
+  &:hover {
+    left: 0; /* 鼠标悬停时，使元素按应有的方式显示 */
+  }
+}
+
+/* about 链接：距离顶部 20 像素，背景为绿色 */
+#one, #two, #three, #four {
+  background-color: rgb(128, 128, 128);
+  /* 半透明 */
+  opacity: 0.5;
+}
+
+#one {
+  bottom: 280px;
+  /*background-color: #4CAF50;*/
+}
+
+#two {
+  bottom: 220px;
+  /*background-color: #2196F3; !* Blue *!*/
+}
+
+#three {
+  bottom: 160px;
+  /*background-color: #f44336; !* Red *!*/
+}
+
+#four {
+  bottom: 100px;
+  /*background-color: #555 !* 浅黑色 *!*/
+}
+
+/* ------------------- */
+
+#to-top {
+  /* 右下角 */
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+
+  /*!* 鼠标悬停 *!*/
+  /*cursor: pointer;*/
+
+  /*!* 圆角 *!*/
+  /*border-radius: 50%;*/
+
+  img {
+    /* 图片大小 */
+    width: 50px;
+    height: 50px;
+
+    /* 图片居中 */
+    margin: 0 auto;
+    display: block;
+
+    /* 逐渐变亮 */
+    transition: opacity 0.5s;
+    opacity: 0.5;
+
+    /* 圆角 */
+    border-radius: 50%;
+
+    &:hover {
+      /* 逐渐变淡 */
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
