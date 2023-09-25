@@ -30,39 +30,48 @@ window.onload = function () {
             document.body.scrollTop;
         if (backTop > pageHeight) {
             // toTop.style.display = "block";
-
             // mySidenav.style.display = "block";
 
             // toTop淡入
             $("#btn").fadeIn(1000);
-
             // mySidenav淡入
             $("#mySidenav").fadeIn(1000);
         } else {
             toTop.style.display = "none";
+            mySidenav.style.display = "none";
 
-            // 淡出
-            $("#btn").fadeOut(1000);
-
-            // mySidenav淡出
-            $("#mySidenav").fadeOut(1);
+            // // toTop淡出
+            // $("#btn").fadeOut(1000);
         }
     }
+
+    chartEight();
 }
 
-window.onscroll = function () {
-
-    // const topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
-    // const mySidenav = document.getElementById("mySidenav");//获取到导航栏id
-    //
-    // if (topScroll <= 250) {
-    //     //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-    //     mySidenav.style.position = 'static';
-    // } else {
-    //     //当滚动距离大于250px时执行下面的东西
-    //     mySidenav.style.position = 'fixed';
-    //     // mySidenav.style.top = '6%';
-    //     // mySidenav.style.right = '6%';
-    //     console.log(topScroll)
-    // }
+function chartEight() {
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(chartDom);
+    var option;
+    option = {
+        title: {
+            text: '中国每周工作时长',
+            subtext: '数据来源：国家统计局'
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ["8", "9", "10", "11", "12", "1", "2", "3", "4", "5", "6", "7"]
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                data: [48, 47.8, 47.9, 47.7, 47.9, 47.9, 47.9, 48.7, 48.8, 48.6, 48.7, 48.7],
+                type: 'line',
+                areaStyle: {}
+            }
+        ]
+    };
+    option && myChart.setOption(option);
 }

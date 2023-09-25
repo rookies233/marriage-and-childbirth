@@ -10,12 +10,18 @@
 
 @pink: #ECBBCB;
 @blue: #abdffa;
+@deep-pink: #d48070;
 @sidenav-to-bottom: 500px;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::selection {
+  // 灰色半透明
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*html {*/
@@ -31,7 +37,6 @@
   background-position: center;
   /* 背景图片不重复 */
   background-repeat: no-repeat;
-
   /* 高度充满屏幕 */
   height: 100vh;
 
@@ -50,21 +55,16 @@
 
     /* 白色字体 */
     color: #fff;
-
     /* 居中 */
     text-align: center;
-
     /* 垂直居中 */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-
     /* 左右居中 */
     margin: 0 auto;
     width: 80%;
-
     font-size: 45px;
-
     /* 描边 */
     text-shadow: 0 0 10px #000;
 
@@ -84,7 +84,9 @@
 }
 
 .flourish-chart {
+  // 使图表居中
   margin: 0 auto;
+  // 使图表宽度为 100%
   width: 100%;
 }
 
@@ -93,73 +95,83 @@
 }
 
 .main-content {
-  /* 背景颜色 */
   background-color: #fcfbf8;
 
   img {
     /* 左右居中 */
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     display: block;
   }
-}
 
-.container {
-  /* 左右居中 */
-  margin: 0 auto;
-  width: 75%;
+  .container {
+    margin: 0 auto;
+    width: 75%;
+    line-height: 2em;
+    padding: 5em 0;
 
-  /*行距*/
-  line-height: 2em;
+    p {
+      /* 段落间距 */
+      margin-bottom: 2em;
+    }
 
-  /* 上下padding */
-  padding: 5em 0;
+    .part {
+      border-bottom: 2px dashed rgb(128, 128, 128);
+      /* 左右padding */
+      padding: 5em 15em;
 
-  p {
-    /* 段落间距 */
-    margin-bottom: 2em;
+      .title {
+        /* 左右居中 */
+        text-align: center;
+
+        /*!*行距*!*/
+        /*line-height: 2em;*/
+
+        /* 底部margin */
+        margin: 0 auto 2em;
+
+        font-family: "朱雀仿宋", sans-serif;
+        font-size: 25px;
+
+        .icon {
+          width: 25%;
+        }
+
+        h2 {
+          line-height: 1.5em;
+        }
+      }
+
+      .story {
+        // 左右居中
+        margin: 1em auto;
+        width: 90%;
+      }
+    }
+
+    .part-four {
+      h3 {
+        margin-bottom: 1em;
+      }
+    }
   }
 }
 
-.part {
-  border-bottom: 2px dashed rgb(128, 128, 128);
-
-  /* 左右padding */
-  padding: 5em 15em;
-}
-
-.title {
-  /* 左右居中 */
-  text-align: center;
-
-  /*!*行距*!*/
-  /*line-height: 2em;*/
-
-  /* 底部margin */
-  margin: 0 auto 2em;
-
-  font-family: "朱雀仿宋", sans-serif;
-  font-size: 25px;
-
-  .icon {
-    width: 25%;
-  }
-
-  h2 {
-    line-height: 1.5em;
-  }
+strong {
+    color: #3e454c;
 }
 
 .pink {
-  color: @pink;
+  color: @deep-pink;
   font-size: 20px;
 }
 
-.part-one {
-  img {
-    width: 90%;
-    margin-bottom: 1em;
-  }
+#cite {
+  list-style: none;
+  margin: 2em auto;
+  text-align: center;
+  color: gray;
+  font-size: 15px;
 }
 
 /* ------------------- */
@@ -220,7 +232,7 @@
   cursor: pointer;
 
   /*!* 圆角 *!*/
-  /*border-radius: 50%;*/
+  border-radius: 50%;
 
   img {
     /* 图片大小 */

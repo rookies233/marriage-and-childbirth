@@ -6,6 +6,7 @@
     <!-- 修改页签icon logo -->
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png"></link>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="./js/index.js"></script>
 </head>
 <body>
 <div class="banner">
@@ -18,17 +19,16 @@
 </div>
 <div class="main-content">
     <div id="mySidenav" class="sidenav">
-        <a href="#part-one" id="btn-one">One</a>
-        <a href="#part-two" id="btn-two">Two</a>
-        <a href="#part-three" id="btn-three">Three</a>
-        <a href="#part-four" id="btn-four">Four</a>
+        <a href="#part-one" id="btn-one">一</a>
+        <a href="#part-two" id="btn-two">二</a>
+        <a href="#part-three" id="btn-three">三</a>
+        <a href="#part-four" id="btn-four">四</a>
     </div>
     <div class="container">
         <div class="part part-one" id="part-one">
             <p>
                 今年2月，B站up主全嘻嘻一个题为《北大宿舍聊天×上野千鹤子|只要自由地活着怎么样都可以》的视频，
-                <strong>再次将婚育话题推上热搜。</strong>
-                而从“王宝钏挖野菜”，《消失的她》热播到“许沁的白粥”，
+                <strong>再次将婚育话题推上热搜。</strong>而从“王宝钏挖野菜”，《消失的她》热播到“许沁的白粥”，
                 <strong>似乎只要与恋爱、结婚、生子相关的话题必然引起人们的热议。</strong>
             </p>
             <p>
@@ -38,12 +38,7 @@
             <p>
                 40岁的刘璐（化名）目前未婚，就职于一家保险公司的中层领导，关于大家对于“为什么都这个年纪了，还不结婚？”的疑问，她是这样回答的：“其实一开始我并不是不想结婚，只是工作太忙了没有时间，之后，家里一直在催婚，越催我反而越不想结，我觉得以只是为了结婚组建家庭为目的的爱情对于我来说是负担。况且我自己有车有房，放假了就去旅游，一个人生活也没什么不好的。”
             </p>
-            <!--            <div id="story-three">-->
-            <!--                <div>-->
-            <!--                    她的一生共经历过两段婚姻，养育了7个孩子。她说:“那个年代哪有现在想不想结婚、生不生孩子的说法，总要找一个人一起搭伙过日子的。”对于现在年轻人不想结婚生育的观念，奶奶说：“现在的年轻人不像我们以前，现在机会多呀，每个人追求不一样了，不过我觉得结婚生孩子过上一个稳定的生活总是好的。”-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <img src="img/林珍-故事3-有字.png">
+            <img class="story" src="img/story-1.png" alt="刘鹏（故事一）">
             <p>
                 像刘璐这样的例子不在少数，随着生活与工作压力的增大，女性权益越来越多得到保障，
                 <strong>许许多多的年轻人对于结婚与生育表示并不在未来规划之中。</strong>
@@ -51,7 +46,7 @@
         </div>
         <div class="part part-two" id="part-two">
             <div class="title">
-                <img class="icon" src="img/part-two-icon.png">
+                <img class="icon" src="img/part-2-icon.png">
                 <h2>婚育现状步入冷局</h2>
             </div>
             <p>
@@ -65,22 +60,18 @@
                 那么我国的婚育情况到底是怎样的呢？
             </p>
             <!--            <div id="chart-one" class="chart" style="width: 600px;height:400px;"></div>-->
-            <!--            <img src="img/图1.gif" alt="我国结婚登记情况" class="marriage-statistics">-->
+            <!--            <img src="img/chart-1.gif" alt="我国结婚登记情况" class="marriage-statistics">-->
             <div class="flourish-embed flourish-chart" data-src="visualisation/15130090">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
             <p>
                 自2013年我国结婚登记数达到最高值1346.9万对后的9年时间以来，
-                <strong>我国结婚登记数量一直呈急剧下降趋势，而离婚登记数量却呈现稳定上涨趋势</strong>
-                ，至19年疫情爆发的影响，才使得离婚登记数量开始逐渐减少。
+                <strong>我国结婚登记数量一直呈急剧下降趋势，而离婚登记数量却呈现稳定上涨趋势</strong>，至19年疫情爆发的影响，才使得离婚登记数量开始逐渐减少。
             </p>
             <p>
-                无独有偶，
-                <strong>
-                    结婚局面低迷的同时，生育现状也走入<span class="pink">冰点</span>。
-                </strong>
+                无独有偶，<strong>结婚局面低迷的同时，生育现状也走入<span class="pink">冰点</span>。</strong>
             </p>
-            <!--            <img class="chart" src="img/图2.gif" alt="图2">-->
+            <!--            <img class="chart" src="img/chart-2.gif" alt="图2">-->
             <div class="flourish-embed flourish-chart" data-src="visualisation/15134544">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
@@ -91,24 +82,20 @@
             <p>
                 <strong>伴随着婚育情况走入冷局的是越来越多年轻人的婚育观走入抵触婚育的死胡同。</strong>
             </p>
-            <p>
-                小怡（化名），就读于国内某985高校，今年才20岁的她就已经规划好了以后的生活，关于结婚生子她说道：“我不想结婚，也不会生孩子，甚至现在我都懒得谈恋爱。”我好奇的问她为什么那么笃定呢？“没有为什么啊，就是单纯不想罢了。”
-            </p>
+            <img class="story" src="img/story-2.png" alt="小怡（故事二）">
         </div>
         <div class="part part-three" id="part-three">
             <div class="title">
-                <img class="icon" src="img/part-three-icon.png" alt="part-two-icon">
+                <img class="icon" src="img/part-3-icon.png" alt="part-two-icon">
                 <h2>从多子多福到不婚不育</h2>
             </div>
             <p>
                 说道结婚，就要先从年轻人的恋爱现状谈起，“智者不入爱河，寡王一路硕博”成为了年轻人们经常挂在嘴边的话语。
-                <strong>这个时代，似乎只有清醒搞事业才是人生目标，而恋爱成为了追求幸福路上的一大阻碍。</strong>
-                更有甚者，对于恋爱不止于不想谈、不愿谈，而是
-                <strong>
-                    升级到对于恋爱本身的批判之上，对于所谓的<span class="pink">“恋爱脑”</span>进行全方位攻击。
-                </strong>
+                <strong>这个时代，似乎只有清醒搞事业才是人生目标，而恋爱成为了追求幸福路上的一大阻碍。</strong>更有甚者，对于恋爱不止于不想谈、不愿谈，而是
+                <strong>升级到对于恋爱本身的批判之上，对于所谓的<span
+                        class="pink">“恋爱脑”</span>进行全方位攻击。</strong>
             </p>
-            <!--            <img class="chart" src="img/图3.gif" alt="图3">-->
+            <!--            <img class="chart" src="img/chart-3.gif" alt="图3">-->
             <div class="flourish-embed flourish-pictogram" data-src="visualisation/15134661">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
@@ -126,42 +113,37 @@
                     <span class="pink">晚婚现状显现</span>。
                 </strong>
             </p>
-            <!--            <img class="chart" src="img/图4.gif" alt="图4">-->
+            <!--            <img class="chart" src="img/chart-4.gif" alt="图4">-->
             <div class="flourish-embed flourish-sankey" data-src="visualisation/15134624">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
             <p>
-                <strong>
-                    关于<span class="pink">生育</span>
-                </strong>
-                ，《人口与健康》调查了共1343位20—39岁的育龄青年发现，大部分调查对象的理想初次生育年龄集中在25—29岁，同时，
+                <strong>关于<span class="pink">生育</span></strong>，《人口与健康》调查了共1343位20—39岁的育龄青年发现，大部分调查对象的理想初次生育年龄集中在25—29岁，同时，
                 <strong>约有8.2%的调查对象表示没有生育打算或不确定是否要生育。</strong>
             </p>
-            <img class="chart" src="img/图5.gif" alt="图5">
+            <img class="chart" src="img/chart-5.gif" alt="图5">
             <p>
                 可见，随着时间的推移，
-                <strong>
-                    人们的婚育观念已经从
-                    <span class="pink">“多子多福”</span>
-                    走向了
-                    <span class="pink">“不婚不育”</span>
-                    。
+                <strong>人们的婚育观念已经从
+                    <span class="pink">“多子多福”</span>走向了
+                    <span class="pink">“不婚不育”</span>。
                 </strong>
             </p>
+            <img class="story" src="img/story-3.png">
             <p>
                 林珍（化名），一位年过六旬的奶奶，她的一生共经历过两段婚姻，养育了7个孩子。她说:“那个年代哪有现在想不想结婚、生不生孩子的说法，总要找一个人一起搭伙过日子的。”对于现在年轻人不想结婚生育的观念，奶奶说：“现在的年轻人不像我们以前，现在机会多呀，每个人追求不一样了，不过我觉得结婚生孩子过上一个稳定的生活总是好的。”
             </p>
         </div>
         <div class="part part-four" id="part-four">
             <div class="title">
-                <img class="icon" src="img/part-four-icon.png" alt="part-three-icon">
+                <img class="icon" src="img/part-4-icon.png" alt="part-three-icon">
                 <h2>
                     造成这种差异的原因<br>
                     除了社会经济的发展以外还有什么呢？
                 </h2>
             </div>
             <h3>1. 时间成本高</h3>
-            <ul>
+            <ul id="cite">
                 <li>“我太忙了，忙得没有时间去认识新的人，忙着工作上班。”</li>
                 <li>“每天都是996，哪里有什么时间精力。”</li>
                 <li>“忙起来根本没时间，生了小孩后都没时间陪孩子。”</li>
@@ -176,10 +158,17 @@
                 随着社会用人条件的增高，越来越多的公司大厂都要求研究生学历起步。根据智联招聘发布的《2023年大学生就业力调研报告》显示
                 <strong>无论事在offer的进展或者是获取上，硕博学历都更优于本科与专科学历。</strong>
             </p>
+            <div class="flourish-embed flourish-chart chart-6-7" data-src="visualisation/15136941">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+            <div class="flourish-embed flourish-chart chart-6-7" data-src="visualisation/15137171">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
             <p>
                 并且双一流硕士相比于本科及普本硕士在offer获得的可能性上有着明显优势。
                 <strong>所以目前许多大学生毕业之后并不会选择成家立业，而是为了获得更宽的发展道路选择继续深造。</strong>
             </p>
+            <img class="icon" src="img/pic-1.png" alt="图1">
             <p>
                 根据研招网官方统计，
                 <strong>2023年研究生报考人数为474万，同比增长17万，约占2023年高校毕业生人数的40%。</strong>
@@ -196,6 +185,7 @@
             <p>
                 根据《中国睡眠报告（2022）》指出，我国平均每天睡眠时长为7.06个小时，那么每天的剩余时间就是7.20小时，这还不包括洗漱，休闲，娱乐的时间。并且生育后，面临需要抽空照顾小孩的情况，会让本就稀少的空闲时间更加压缩。
             </p>
+            <div id="main" style="width: 600px;height:400px;"></div>
             <p>
                 越来越少的空闲时间，越来越普遍的“快餐式恋爱”“周末夫妻”，让不少的人对于爱情、婚姻的失去了原有的向往，对于生育更是避之不及。
             </p>
@@ -254,5 +244,4 @@
 </body>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/echarts.min.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
 </html>
