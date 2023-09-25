@@ -1,7 +1,7 @@
 window.onload = function () {
     // 1.找到页面中的按钮
     const toTop = document.getElementById("btn");
-    // const mySidenav = document.getElementById("mySidenav");
+    const mySidenav = document.getElementById("mySidenav");
 
     toTop.style.display = "none";
     let timer = null;
@@ -29,13 +29,23 @@ window.onload = function () {
         const backTop = document.documentElement.scrollTop ||
             document.body.scrollTop;
         if (backTop > pageHeight) {
-            toTop.style.display = "block";
+            // toTop.style.display = "block";
 
             // mySidenav.style.display = "block";
+
+            // toTop淡入
+            $("#btn").fadeIn(1000);
+
+            // mySidenav淡入
+            $("#mySidenav").fadeIn(1000);
         } else {
             toTop.style.display = "none";
 
-            // mySidenav.style.display = "none";
+            // 淡出
+            $("#btn").fadeOut(1000);
+
+            // mySidenav淡出
+            $("#mySidenav").fadeOut(1);
         }
     }
 }
