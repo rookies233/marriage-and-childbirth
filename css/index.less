@@ -10,6 +10,7 @@
 
 @pink: #ECBBCB;
 @blue: #abdffa;
+@sidenav-to-bottom: 500px;
 
 /*html {*/
 /*    scroll-behavior: smooth;*/
@@ -43,51 +44,48 @@
   /*position: relative;*/
   /*top: 50%;*/
   /*transform: translateY(-50%);*/
+
+  .content {
+    font-family: "千图笔锋手写体", sans-serif;
+
+    /* 白色字体 */
+    color: #fff;
+
+    /* 居中 */
+    text-align: center;
+
+    /* 垂直居中 */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* 左右居中 */
+    margin: 0 auto;
+    width: 80%;
+
+    font-size: 45px;
+
+    /* 描边 */
+    text-shadow: 0 0 10px #000;
+
+    h1 {
+      /* 靠左 */
+      text-align: left;
+    }
+
+    span {
+      /* 粉色字体 */
+      color: @pink;
+
+      /* 字体加大 */
+      font-size: 100px;
+    }
+  }
 }
 
-.content {
-  font-family: "千图笔锋手写体", sans-serif;
-
-  /* 白色字体 */
-  color: #fff;
-
-  /* 居中 */
-  text-align: center;
-
-  /* 垂直居中 */
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-  /* 左右居中 */
+.flourish-chart {
   margin: 0 auto;
-  width: 80%;
-
-  font-size: 45px;
-
-  /* 描边 */
-  text-shadow: 0 0 10px #000;
-
-  h1 {
-    /* 靠左 */
-    text-align: left;
-  }
-
-  span {
-    /* 粉色字体 */
-    color: @pink;
-
-    /* 字体加大 */
-    font-size: 100px;
-  }
-}
-
-/* ------------------- */
-
-.chart {
-  /* 左右居中 */
-  margin: 0 auto;
-  //width: 75%;
+  width: 100%;
 }
 
 .main-content {
@@ -149,7 +147,7 @@
 
   transition: 0.3s; /* 在悬停时添加过渡 */
   padding: 15px; /* 15px 内边距 */
-  width: 100px; /* 设置特定宽度 */
+  width: 120px; /* 设置特定宽度 */
   text-decoration: none; /* 删除下划线 */
   font-size: 20px; /* 增加字体大小 */
   color: white; /* 白色文本颜色 */
@@ -161,30 +159,29 @@
 }
 
 /* about 链接：距离顶部 20 像素，背景为绿色 */
-#one, #two, #three, #four {
-  background-color: rgb(128, 128, 128);
+#btn-one, #btn-two, #btn-three, #btn-four {
   /* 半透明 */
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
-#one {
-  bottom: 280px;
-  /*background-color: #4CAF50;*/
+#btn-one {
+  bottom: @sidenav-to-bottom + 180;
+  background-color: @blue;
 }
 
-#two {
-  bottom: 220px;
-  /*background-color: #2196F3; !* Blue *!*/
+#btn-two {
+  bottom: @sidenav-to-bottom + 120;
+  background-color: @pink;
 }
 
-#three {
-  bottom: 160px;
-  /*background-color: #f44336; !* Red *!*/
+#btn-three {
+  bottom: @sidenav-to-bottom + 60;
+  background-color: @blue;
 }
 
-#four {
-  bottom: 100px;
-  /*background-color: #555 !* 浅黑色 *!*/
+#btn-four {
+  bottom: @sidenav-to-bottom;
+  background-color: @pink;
 }
 
 /* ------------------- */
