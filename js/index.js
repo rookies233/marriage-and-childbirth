@@ -1,4 +1,10 @@
 window.onload = function () {
+    pullDown();
+    toTop();
+    chartEight();
+}
+
+function toTop() {
     // 1.找到页面中的按钮
     const toTop = document.getElementById("btn");
     const mySidenav = document.getElementById("mySidenav");
@@ -44,8 +50,35 @@ window.onload = function () {
             // $("#btn").fadeOut(1000);
         }
     }
+}
 
-    chartEight();
+function pullDown() {
+    // 1.找到页面中的按钮
+    const pullDown = document.getElementById("pull-down");
+
+    let timer = null;
+
+    // 2. 给按钮绑定点击事件
+    pullDown.onclick = function () {
+        // // 周期性定时
+        // timer = setInterval(function () {
+        //     // 获取浏览器顶部距离banner底部的距离
+        //
+        //     let bannerHeight = document.getElementById("banner").style.height;
+        //
+        //     // 越滚越慢
+        //     let speedTop = bannerHeight / 5;
+        //     document.documentElement.scrollTop = bannerHeight - speedTop;
+        //     if (bannerHeight === 0) {
+        //         clearInterval(timer);
+        //     }
+        // }, 30)
+
+        // 点击按钮，页面滚动到banner底部
+        // 获取浏览器顶部距离banner底部的距离
+        let bannerHeight = document.getElementById("banner").style.height;
+        document.documentElement.scrollTop = bannerHeight;
+    }
 }
 
 function chartEight() {
