@@ -2,6 +2,7 @@
   font-family: 千图笔锋手写体;
   src: url(../font/千图笔锋手写体.ttf);
 }
+
 @font-face {
   font-family: 朱雀仿宋;
   src: url(../font/朱雀仿宋.ttf);
@@ -35,6 +36,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+
   .content {
     font-family: "千图笔锋手写体", sans-serif;
     /* 白色字体 */
@@ -51,14 +53,17 @@
     font-size: 3em;
     /* 描边 */
     text-shadow: 0 0 10px #000;
+
     h1 {
       text-align: left;
     }
+
     span {
       color: @pink;
       font-size: 1.5em;
     }
   }
+
   #pull-down {
     /* 下拉箭头置底且居中 */
     position: absolute;
@@ -77,9 +82,9 @@
     cursor: pointer;
 
     &:hover {
-        /* 逐渐变亮 */
-        transition: opacity 0.5s;
-        opacity: 1;
+      /* 逐渐变亮 */
+      transition: opacity 0.5s;
+      opacity: 1;
     }
   }
 }
@@ -105,29 +110,32 @@
 
 .main-content {
   background-color: @background;
+
   img {
     /* 左右居中 */
     margin: 0 auto;
     width: 75%;
     display: block;
   }
+
   .container {
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     line-height: 2em;
     padding: 5em 0;
+
     p {
       /* 段落间距 */
       margin-bottom: 2em;
     }
+
     .part {
       border-bottom: 2px dashed rgba(128, 128, 128, 0.5);
-      &:last-child {
+      &:nth-last-child(2) {
         border-bottom: none;
       }
 
-      /* 左右padding */
-      padding: 5em 15em;
+      margin: 5em 0;
       .title {
         /* 左右居中 */
         text-align: center;
@@ -139,24 +147,29 @@
         margin: 0 auto 2em;
         font-family: "朱雀仿宋", sans-serif;
         font-size: 25px;
+
         img {
           width: 40%;
           margin-bottom: 0.5em;
         }
+
         h2 {
           line-height: 1.5em;
           color: @black-gray;
         }
       }
+
       .story {
         // 左右居中
         margin: 1em auto;
         width: 90%;
       }
     }
+
     #part-two .title .icon {
       width: 30%;
     }
+
     #part-four {
       .list-title {
         display: flex;
@@ -164,34 +177,55 @@
         justify-content: flex-start;
         margin-left: 0;
         margin-bottom: 1.5em;
+
         img {
           width: 10%;
           margin-right: 1em;
           margin-left: -1em;
         }
       }
-      .title img{
+
+      .title img {
         width: 25%;
       }
+
       #pic-one {
         width: 57%;
         margin: 3em auto;
       }
+
       #pic-two {
         margin: 3em auto;
       }
+
       #pic-three {
         width: 40%;
         margin: 2em auto;
       }
+
       #pic-4 {
         width: 70%;
         margin: 2em auto;
       }
     }
+
+    .resource {
+      color: #777a7e;
+      list-style-position: inside;
+      font-size: 0.9em;
+
+      ol {
+        list-style-type: none;
+        counter-reset: sectioncounter;
+      }
+      li:before {
+        content: "[" counter(sectioncounter) "] ";
+        counter-increment: sectioncounter;
+      }
+    }
   }
 
-  .footer{
+  .footer {
     //background-color: #3e454c;
     color: @deep-pink;
     text-align: center;
@@ -200,9 +234,10 @@
     padding-bottom: 7em;
     border-top: 2px solid rgba(128, 128, 128, 0.7);
 
-    .footer-part{
-        margin: 2em auto;
-      h4{
+    .footer-part {
+      margin: 2em auto;
+
+      h4 {
         font-family: "朱雀仿宋", sans-serif;
         margin-bottom: 0.5em;
       }
@@ -261,14 +296,17 @@ strong {
   opacity: 0.9;
   font-family: "朱雀仿宋", sans-serif;
 }
+
 #btn-one {
   bottom: @sidenav-to-bottom + 180;
   background-color: @blue;
 }
+
 #btn-two {
   bottom: @sidenav-to-bottom + 120;
   background-color: @pink;
 }
+
 #btn-three {
   bottom: @sidenav-to-bottom + 60;
   background-color: @blue;
