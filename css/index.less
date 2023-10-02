@@ -10,6 +10,7 @@
 
 @background: #fcfbf8;
 @black-gray: #3e454c;
+@gray: #777a7e;
 @pink: #ECBBCB;
 @blue: #abdffa;
 @deep-pink: #d48070;
@@ -210,10 +211,13 @@
     }
 
     .resource {
-      color: #777a7e;
+      color: @gray;
       list-style-position: inside;
       font-size: 0.9em;
 
+      h3 {
+        font-weight: normal;
+      }
       ol {
         list-style-type: none;
         counter-reset: sectioncounter;
@@ -227,9 +231,9 @@
 
   .footer {
     //background-color: #3e454c;
-    color: @deep-pink;
+    color: @gray;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 0.9em;
     padding-top: 2em;
     padding-bottom: 7em;
     border-top: 2px solid rgba(128, 128, 128, 0.7);
@@ -238,7 +242,7 @@
       margin: 2em auto;
 
       h4 {
-        font-family: "朱雀仿宋", sans-serif;
+        //font-family: "朱雀仿宋", sans-serif;
         margin-bottom: 0.5em;
       }
     }
@@ -263,7 +267,8 @@ strong {
   list-style: none;
   margin: 2em auto;
   text-align: center;
-  color: gray;
+  //color: gray;
+  color: @gray;
   font-size: 15px;
 }
 
