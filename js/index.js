@@ -1,7 +1,20 @@
+import {ScrollTrigger} from "./ScrollTrigger.min";
+
 window.onload = function () {
     pullDown();
     toTop();
     chartEight();
+}
+
+function stickyAnimate() {
+    ScrollTrigger.create({
+        trigger: ".sticky",
+        start: "top top",
+        end: "bottom top",
+        markers: true,
+        pin: true,
+        // animation:
+    });
 }
 
 function toTop() {
