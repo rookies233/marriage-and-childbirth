@@ -38,6 +38,7 @@
   background-repeat: no-repeat;
   height: 100vh;
 
+
   .content {
     font-family: "千图笔锋手写体", sans-serif;
     color: #fff;
@@ -272,17 +273,37 @@
     }
 
     #part-six {
-      //#phone-content {
-      //  margin: 0 auto;
-      //  padding: 0;
-      //
-      //  /* 放在phone-background中 */
-      //  position: absolute;
-      //  left: 50%;
-      //  top: 50%;
-      //  transform: translate(-50%, -50%);
-      //
-      //}
+      .phone {
+        //background-image: url("../img/phone-background.png");
+        //background-size: contain;
+        //background-repeat: no-repeat;
+        //background-position: center;
+        //height: 2000px;
+
+        //margin-bottom: 10em;
+        margin: 3em auto;
+
+        //height: 1000px;
+
+        position: relative;
+
+        #phone-content {
+          padding: 0;
+          width: 68%;
+
+
+          ///* 叠在phone-background上 */
+          //  position: relative;
+          //  left: 50%;
+          //  transform: translateX(-50%);
+
+          position: absolute;
+          left: 49%;
+          transform: translateX(-50%);
+          top: 25%;
+          //transform: translateY(-50%);
+        }
+      }
     }
 
     .resource {

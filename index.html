@@ -399,16 +399,16 @@
                 若单看互联网上的言论，我们可能会对婚姻丧失所有信心，
                 <strong>但在现实生活中，也有像徐沁这样在婚育中感知幸福，收获满足感与成就感的群体。</strong>因此，我们应当冷静辩证地看待被妖魔化的婚姻，切不可人云亦云。
             </p>
-            <img id="pic-five" src="img/pic-5.png" alt="手机全">
+            <!--            <img id="pic-five" src="img/pic-5.png" alt="手机全">-->
             <div class="phone">
                 <img id="phone-background" src="img/phone-background.png">
                 <div id="phone-content">
-                    <img src="img/phone-content-1.png">
-                    <img src="img/phone-content-2.gif">
-                    <img src="img/phone-content-3.png">
-                    <img src="img/phone-content-4.gif">
-                    <img src="img/phone-content-5.png">
-                    <img src="img/phone-content-6.png">
+                    <img id="phone-content-1" src="img/phone-content-1.png">
+                    <img id="phone-content-2" src="img/phone-content-2.gif">
+                    <img id="phone-content-3" src="img/phone-content-3.png">
+                    <img id="phone-content-4" src="img/phone-content-4.gif">
+                    <img id="phone-content-5" src="img/phone-content-5.png">
+                    <img id="phone-content-6" src="img/phone-content-6.png">
                 </div>
             </div>
             <p>
@@ -503,6 +503,22 @@
                 .set("#scroll-p3", {opacity: 0})
 
                 .fromTo(".sticky p:last-child", {opacity: 0}, {opacity: 1})
+    });
+
+    ScrollTrigger.create({
+        trigger: ".phone",
+        start: "top top",
+        end: "bottom bottom",
+        markers: true,
+        scrub: true,
+        animation:
+            gsap.timeline()
+                .fromTo("#phone-content-1", {opacity: 0}, {opacity: 1})
+                .fromTo("#phone-content-2", {opacity: 0}, {opacity: 1})
+                .fromTo("#phone-content-3", {opacity: 0}, {opacity: 1})
+                .fromTo("#phone-content-4", {opacity: 0}, {opacity: 1})
+                .fromTo("#phone-content-5", {opacity: 0}, {opacity: 1})
+                .fromTo("#phone-content-6", {opacity: 0}, {opacity: 1})
     });
 </script>
 </body>
