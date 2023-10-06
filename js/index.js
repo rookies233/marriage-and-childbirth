@@ -1,9 +1,9 @@
 // import {ScrollTrigger} from "./ScrollTrigger.min";
 
 window.onload = function () {
-    pullDown();
     toTop();
-    chartEight();
+    // chartEight();
+    // pullDown();
 }
 
 function stickyAnimate() {
