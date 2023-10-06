@@ -24,7 +24,6 @@
 }
 
 ::selection {
-  // 灰色半透明
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -41,19 +40,15 @@
 
   .content {
     font-family: "千图笔锋手写体", sans-serif;
-    /* 白色字体 */
     color: #fff;
-    /* 居中 */
     text-align: center;
     /* 垂直居中 */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    /* 左右居中 */
     margin: 0 auto;
     width: 80%;
     font-size: 3em;
-    /* 描边 */
     text-shadow: 0 0 10px #000;
 
     h1 {
@@ -92,12 +87,12 @@
 }
 
 .flourish-embed {
-  margin: 0 auto;
+  margin: 5em auto;
   width: 90%;
 }
 
 .chart {
-  margin: 0 auto;
+  margin: 5em auto;
 }
 
 .dychart {
@@ -174,8 +169,13 @@
       margin: 0 auto;
     }
 
-    #part-four .list-title img, #part-five .part-five-list-title img {
-      width: 8%;
+    #part-four .list-title, #part-five .part-five-list-title {
+      margin-top: 5em;
+      margin-bottom: 5em;
+
+      img {
+        width: 8%;
+      }
     }
 
     #part-four {
@@ -184,7 +184,6 @@
         align-items: center;
         justify-content: flex-start;
         margin-left: 0;
-        margin-bottom: 1.5em;
 
         img {
           //width: 10%;
@@ -226,7 +225,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-start; // 使得图片和文字在同一行
-        margin-bottom: 1.5em;
 
         img {
           //width: 10%;
@@ -260,8 +258,26 @@
 
 
       #pic-five {
-        width: 70%;
         margin: 2em auto;
+      }
+
+      .phone {
+        background-image: url("../img/phone-background.png");
+        height: 1000px;
+      }
+    }
+
+    #part-six {
+      #phone-content {
+        margin: 0 auto;
+        padding: 0;
+
+        /* 放在phone-background中 */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
       }
     }
 
