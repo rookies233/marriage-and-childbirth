@@ -446,8 +446,6 @@
 <!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>-->
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
-<script src="js/anime.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
 <script>
     // import {gsap} from "./js/gsap.min";
 
@@ -463,9 +461,9 @@
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
                 .fromTo("#chart-14", {opacity: 0}, {opacity: 0.5})
 
-                .set("#scroll-p1", {display: true}, "<")
+                .set("#scroll-p1", {opacity: 1}, "<")
                 .fromTo("#scroll-p1", {y: 1000}, {y: -100}, "<")
-                .set("#scroll-p1", {display: false})
+                .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-14", {opacity: 0.5}, {opacity: 0})
                 .fromTo("#chart-15", {opacity: 0}, {opacity: 0.5})
