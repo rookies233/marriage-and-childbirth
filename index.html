@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>躺平式婚育： 中国年轻人的婚育观怎么了？</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png"></link>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="./js/index.js"></script>
 </head>
@@ -285,9 +285,9 @@
                 <div class="flourish-embed flourish-chart" id="chart-13" data-src="visualisation/15248279">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
-                <p class="scroll-p" id="scroll-p1">
-                    <strong>此前民政部数据显示，2023年我国单身成年人口高达2.3亿人，</strong>约为英国、法国、德国人口总和。其中超过7700万名成年人处于独居状态。单身人群构成了一个独特且庞大的消费群体。
-                </p>
+<!--                <p class="scroll-p" id="scroll-p1">-->
+<!--                    <strong>此前民政部数据显示，2023年我国单身成年人口高达2.3亿人，</strong>约为英国、法国、德国人口总和。其中超过7700万名成年人处于独居状态。单身人群构成了一个独特且庞大的消费群体。-->
+<!--                </p>-->
                 <!--                <p>-->
                 <!--                    根据智研瞻产业研究院的数据预测，预计到2029年我国单身经济市场将突破30.17万亿元。-->
                 <!--                </p>-->
@@ -364,9 +364,10 @@
                     class="pink">屏障</span>。
                 <strong>在这里，“婚育”更像是一个张牙舞爪的鬼怪，使恐婚心理广泛蔓延。</strong>
             </p>
-            <div class="flourish-embed flourish-word-cloud" data-src="visualisation/15248565">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-            </div>
+<!--            <div class="flourish-embed flourish-word-cloud" data-src="visualisation/15248565">-->
+<!--                <script src="https://public.flourish.studio/resources/embed.js"></script>-->
+<!--            </div>-->
+            <img src="img/chart-17.png" alt="图17-词云">
             <p>
                 在全嘻嘻和上野千鹤子对话的视频下方，网友们掀起一场激烈的讨论，大多看起来义愤填膺，浓浓的火药味蔓布评论区。
             </p>
@@ -435,17 +436,19 @@
             </div>
         </div>
     </div>
-</div>
-<div id="to-top">
-    <a href="javascript:" id="btn">
-        <img src="img/to-top.png" alt="回到顶部">
-    </a>
+    <div id="to-top">
+        <a href="javascript:" id="btn">
+            <img src="img/to-top.png" alt="回到顶部">
+        </a>
+    </div>
 </div>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/echarts.min.js"></script>
+
 <!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>-->
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
+
 <script>
     // import {gsap} from "./js/gsap.min";
 
@@ -461,9 +464,9 @@
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
                 .fromTo("#chart-14", {opacity: 0}, {opacity: 0.5})
 
-                .set("#scroll-p1", {opacity: 1}, "<")
+                // .set("#scroll-p1", {opacity: 1}, "<")
                 .fromTo("#scroll-p1", {y: 1000}, {y: -100}, "<")
-                .set("#scroll-p1", {opacity: 0})
+                // .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-14", {opacity: 0.5}, {opacity: 0})
                 .fromTo("#chart-15", {opacity: 0}, {opacity: 0.5})

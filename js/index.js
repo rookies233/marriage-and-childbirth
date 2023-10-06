@@ -1,4 +1,4 @@
-import {ScrollTrigger} from "./ScrollTrigger.min";
+// import {ScrollTrigger} from "./ScrollTrigger.min";
 
 window.onload = function () {
     pullDown();
