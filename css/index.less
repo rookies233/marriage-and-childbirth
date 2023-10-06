@@ -15,6 +15,7 @@
 @blue: #abdffa;
 @deep-pink: #d48070;
 @sidenav-to-bottom: 400px;
+@part-padding-left-right: 15em;
 
 * {
   margin: 0;
@@ -135,7 +136,7 @@
         border-bottom: none;
       }
 
-      padding: 2em 15em;
+      padding: 2em @part-padding-left-right;
 
       .title {
         /* 左右居中 */
@@ -241,48 +242,49 @@
         }
       }
 
-      .resource {
-        color: @gray;
-        list-style-position: inside;
-        font-size: 0.9em;
-
-        h3 {
-          font-weight: normal;
-        }
-
-        ol {
-          list-style-type: none;
-          counter-reset: sectioncounter;
-        }
-
-        li:before {
-          content: "[" counter(sectioncounter) "] ";
-          counter-increment: sectioncounter;
-        }
-      }
 
       #pic-five {
         width: 70%;
         margin: 2em auto;
       }
     }
-
-    .footer {
-      //background-color: #3e454c;
+    .resource {
       color: @gray;
-      text-align: center;
+      list-style-position: inside;
       font-size: 0.9em;
-      padding-top: 2em;
-      padding-bottom: 7em;
-      border-top: 2px solid rgba(128, 128, 128, 0.7);
+      margin: 0 @part-padding-left-right + 1.5;
 
-      .footer-part {
-        margin: 2em auto;
+      h3 {
+        font-weight: normal;
+      }
 
-        h4 {
-          //font-family: "朱雀仿宋", sans-serif;
-          margin-bottom: 0.5em;
-        }
+      ol {
+        list-style-type: none;
+        counter-reset: sectioncounter;
+      }
+
+      li:before {
+        content: "[" counter(sectioncounter) "] ";
+        counter-increment: sectioncounter;
+      }
+    }
+  }
+
+  .footer {
+    //background-color: #3e454c;
+    color: @gray;
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    border-top: 2px solid rgba(128, 128, 128, 0.7);
+
+    .footer-part {
+      margin: 2em auto;
+
+      h4 {
+        //font-family: "朱雀仿宋", sans-serif;
+        margin-bottom: 0.5em;
       }
     }
   }
@@ -303,12 +305,11 @@ strong {
 }
 
 #cite {
-    list-style: none;
-    margin: 2em auto;
-    text-align: center;
-    //color: gray;
-    color: @gray;
-    font-size: 15px;
+  list-style: none;
+  margin: 2em auto;
+  text-align: center;
+  color: @gray;
+  font-size: 15px;
 }
 
 /* ------------------- */
