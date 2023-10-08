@@ -449,6 +449,11 @@
             </ol>
         </div>
     </div>
+    <div id="footer-divider">
+        <div class="footer-divider-flex"></div>
+        <img src="img/footer-icon.png">
+        <div class="footer-divider-flex"></div>
+    </div>
     <div class="footer">
         <div class="footer-content">
             <div class="footer-part">
@@ -486,11 +491,13 @@
     // import {gsap} from "./js/gsap.min";
     maxOpacity = 0.9;
 
+    markersFlag = false;
+
     ScrollTrigger.create({
         trigger: ".sticky",
         start: "top top",
         end: "+=3500",
-        markers: true,
+        markers: markersFlag,
         pin: true,
         scrub: true,
         animation:
@@ -522,8 +529,9 @@
     ScrollTrigger.create({
         trigger: ".phone",
         start: "top top",
+        // start: "bottom 1000",
         end: "bottom bottom",
-        markers: true,
+        markers: markersFlag,
         scrub: true,
         animation:
             gsap.timeline()
