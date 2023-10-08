@@ -471,18 +471,21 @@
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
 
                 // .set("#scroll-p1", {}, "<")
-                .fromTo("#scroll-p1", {y: 1000, opacity: 1}, {y: -500, opacity: 0}, "<")
+                .fromTo("#scroll-p1", {y: 1000, opacity: 1}, {y: -500}, "<")
+                .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-14", {opacity: 0}, {opacity: maxOpacity})
 
                 .set("#scroll-p2", {opacity: 1})
-                .fromTo("#scroll-p2", {y: 1000}, {y: -500, opacity: 0}, "<")
+                .fromTo("#scroll-p2", {y: 1000}, {y: -500}, "<")
+                .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-14", {opacity: maxOpacity}, {opacity: 0})
                 .fromTo("#chart-15", {opacity: 0}, {opacity: maxOpacity})
 
                 .set("#scroll-p3", {opacity: 1})
-                .fromTo("#scroll-p3", {y: 1000}, {y: -500, opacity: 0}, "<")
+                .fromTo("#scroll-p3", {y: 1000}, {y: -500}, "<")
+                .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-15", {opacity: maxOpacity}, {opacity: 0})
 
