@@ -458,7 +458,7 @@
 <script src="js/ScrollTrigger.min.js"></script>
 <script>
     maxOpacity = 0.9;
-    markersFlag = true;
+    markersFlag = false;
 
     ScrollTrigger.create({
         trigger: ".sticky",
@@ -469,7 +469,6 @@
         scrub: true,
         animation:
             gsap.timeline()
-                // .fromTo(".sticky p:first-child", {opacity: 1}, {opacity: 0})
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
 
                 // .set("#scroll-p1", {}, "<")
