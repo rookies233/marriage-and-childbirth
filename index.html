@@ -495,7 +495,7 @@
     // import {gsap} from "./js/gsap.min";
     maxOpacity = 0.9;
 
-    markersFlag = false;
+    markersFlag = true;
 
     ScrollTrigger.create({
         trigger: ".sticky",
@@ -532,7 +532,7 @@
 
     ScrollTrigger.create({
         trigger: ".phone",
-        start: "top top",
+        start: "top top+=300px",
         // start: "bottom 1000",
         end: "bottom bottom",
         markers: markersFlag,
