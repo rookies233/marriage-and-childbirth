@@ -27,17 +27,35 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-/*html {*/
-/*    scroll-behavior: smooth;*/
-/*}*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------- */
+
+strong {
+  color: @black-gray;
+}
+
+.pink {
+  color: @deep-pink;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.light {
+  color: #3e454c;
+  font-size: 13px;
+}
+
+/* ------------------- */
 
 .banner {
   background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-
+  height: 120vh;
 
   .content {
     font-family: "千图笔锋手写体", sans-serif;
@@ -45,19 +63,19 @@
     text-align: center;
     /* 垂直居中 */
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     margin: 0 auto;
     width: 80%;
     font-size: 3em;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 5px #000;
 
     h1 {
       text-align: left;
     }
 
     span {
-      color: @pink;
+      color: #cc8573;
       font-size: 1.5em;
     }
   }
@@ -148,7 +166,6 @@
     line-height: 2em;
 
     p {
-      /* 段落间距 */
       margin-bottom: 2em;
     }
 
@@ -162,14 +179,8 @@
       padding: 10em @part-padding-left-right;
 
       .title {
-        /* 左右居中 */
-        text-align: center;
-
-        /*!*行距*!*/
-        /*line-height: 2em;*/
-
-        /* 底部margin */
         margin: 0 auto 2em;
+        text-align: center;
         font-family: "朱雀仿宋", sans-serif;
         font-size: 25px;
 
@@ -185,7 +196,6 @@
       }
 
       .story {
-        // 左右居中
         margin: 1em auto;
         width: 90%;
       }
@@ -203,7 +213,8 @@
       margin: 0 auto;
     }
 
-    #part-four .list-title, #part-five .part-five-list-title {
+
+    .list-title, .part-five-list-title {
       margin-top: 5em;
       margin-bottom: 5em;
 
@@ -213,6 +224,10 @@
     }
 
     #part-four {
+      .title img {
+        width: 40%;
+      }
+
       .list-title {
         display: flex;
         align-items: center;
@@ -226,8 +241,17 @@
         }
       }
 
-      .title img {
-        width: 40%;
+      #list-title-1 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      #cite {
+        list-style: none;
+        margin: 0 auto 2em;
+        text-align: center;
+        color: @gray;
+        font-size: 15px;
       }
 
       #pic-one {
@@ -240,13 +264,13 @@
       }
 
       #pic-three {
-        width: 40%;
-        margin: 2em auto;
+        width: 50%;
+        margin: 3em auto;
       }
 
       #pic-4 {
-        width: 70%;
-        margin: 2em auto;
+        width: 100%;
+        margin: 0 auto;
       }
     }
 
@@ -315,19 +339,10 @@
       #pic-five {
         margin: 2em auto;
       }
-
-      //.phone {
-      //  background-image: url("../img/phone-background.png");
-      //  height: 1000px;
-      //}
     }
 
     #part-six {
       .phone {
-        //background-image: url("../img/phone-background.png");
-        //background-size: contain;
-        //background-repeat: no-repeat;
-        //background-position: center;
         //height: 2000px;
 
         //margin-bottom: 10em;
@@ -341,17 +356,10 @@
           padding: 0;
           width: 68%;
 
-
-          ///* 叠在phone-background上 */
-          //  position: relative;
-          //  left: 50%;
-          //  transform: translateX(-50%);
-
           position: absolute;
           left: 49%;
           transform: translateX(-50%);
           top: 25%;
-          //transform: translateY(-50%);
         }
       }
     }
@@ -435,27 +443,8 @@
   }
 }
 
-strong {
-  color: @black-gray;
-}
 
-.pink {
-  color: @deep-pink;
-  font-size: 20px;
-}
 
-.light {
-  color: #3e454c;
-  font-size: 13px;
-}
-
-#cite {
-  list-style: none;
-  margin: 2em auto;
-  text-align: center;
-  color: @gray;
-  font-size: 15px;
-}
 
 /* ------------------- */
 
@@ -487,27 +476,27 @@ strong {
 
 #btn-one {
   bottom: @sidenav-to-bottom + 240;
-  background-color: @blue;
+  background-color: #a1c9e0;
 }
 
 #btn-two {
   bottom: @sidenav-to-bottom + 180;
-  background-color: @pink;
+  background-color: #fbb4ae;
 }
 
 #btn-three {
   bottom: @sidenav-to-bottom + 120;
-  background-color: @blue;
+  background-color: #a1c9e0;
 }
 
 #btn-four {
   bottom: @sidenav-to-bottom + 60;
-  background-color: @pink;
+  background-color: #fbb4ae;
 }
 
 #btn-five {
   bottom: @sidenav-to-bottom;
-  background-color: @blue;
+  background-color: #a1c9e0;
 }
 
 /* ------------------- */
