@@ -470,8 +470,8 @@
             gsap.timeline()
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
 
-                // .set("#scroll-p1", {}, "<")
-                .fromTo("#scroll-p1", {y: 1000, opacity: 1}, {y: -700}, "<")
+                .set("#scroll-p1", {opacity: 1}, "<")
+                .fromTo("#scroll-p1", {y: 1000}, {y: -700}, "<")
                 .set("#scroll-p1", {opacity: 0})
 
                 .fromTo("#chart-14", {opacity: 0}, {opacity: maxOpacity})
