@@ -4,24 +4,13 @@ window.onload = function () {
     toTop();
 }
 
-function stickyAnimate() {
-    ScrollTrigger.create({
-        trigger: ".sticky",
-        start: "top top",
-        end: "bottom top",
-        markers: true,
-        pin: true,
-        // animation:
-    });
-}
-
 function toTop() {
     // 1.找到页面中的按钮
     const toTop = document.getElementById("btn");
     const mySidenav = document.getElementById("mySidenav");
 
     toTop.style.display = "none";
-    let timer = null;
+    mySidenav.style.display = "none";
 
     // 设置临界值
     const pageHeight = 800;
