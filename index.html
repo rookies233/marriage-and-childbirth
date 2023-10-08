@@ -15,7 +15,7 @@
             中国年轻人的<span>婚育观</span>怎么了？
         </h2>
     </div>
-    <a href="#part-one" id="btn-start">
+    <a href="#part-one">
         <img id="pull-down" src="img/pull-down.png" alt="下拉">
     </a>
 </div>
@@ -266,16 +266,15 @@
                 <h3>个人生活的姿彩</h3>
             </div>
             <div class="sticky">
-                <div class="flourish-embed flourish-hierarchy" id="chart-14" data-src="visualisation/15248318">
+                <div id="chart-13" class="flourish-embed flourish-hierarchy" data-src="visualisation/15248318">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
                 <p class="scroll-p" id="scroll-p1">
                     <strong>此前民政部数据显示，2023年我国单身成年人口高达2.3亿人，</strong>约为英国、法国、德国人口总和。其中超过7700万名成年人处于独居状态。单身人群构成了一个独特且庞大的消费群体。
                 </p>
-                <div class="flourish-embed flourish-chart" id="chart-13" data-src="visualisation/15248279">
+                <div id="chart-14" class="flourish-embed flourish-chart" data-src="visualisation/15248279">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
-
                 <p class="scroll-p" id="scroll-p2">
                     根据智研瞻产业研究院的数据预测，预计到2029年我国单身经济市场将突破30.17万亿元。除此之外，单身经济中“悦己型”消费尤为明显。通过尼尔森的《中国单身经济报告》，我们发现42%的单身消费者为悦己而消费，远高于非单身消费者。
                 </p>
@@ -459,7 +458,7 @@
 <script src="js/ScrollTrigger.min.js"></script>
 <script>
     maxOpacity = 0.9;
-    markersFlag = false;
+    markersFlag = true;
 
     ScrollTrigger.create({
         trigger: ".sticky",
@@ -472,31 +471,28 @@
             gsap.timeline()
                 // .fromTo(".sticky p:first-child", {opacity: 1}, {opacity: 0})
                 .fromTo("#chart-13", {opacity: 1}, {opacity: 0})
+
+                // .set("#scroll-p1", {}, "<")
+                .fromTo("#scroll-p1", {y: 1000, opacity: 1}, {y: -500, opacity: 0}, "<")
+
                 .fromTo("#chart-14", {opacity: 0}, {opacity: maxOpacity})
 
-                .set("#scroll-p1", {opacity: 1}, "<")
-                .fromTo("#scroll-p1", {y: 1000}, {y: -100}, "<")
-                .set("#scroll-p1", {opacity: 0})
+                .set("#scroll-p2", {opacity: 1})
+                .fromTo("#scroll-p2", {y: 1000}, {y: -500, opacity: 0}, "<")
 
                 .fromTo("#chart-14", {opacity: maxOpacity}, {opacity: 0})
                 .fromTo("#chart-15", {opacity: 0}, {opacity: maxOpacity})
 
-                .set("#scroll-p2", {opacity: 1}, "<")
-                .fromTo("#scroll-p2", {y: 1000}, {y: -500}, "<")
-                .set("#scroll-p2", {opacity: 0})
+                .set("#scroll-p3", {opacity: 1})
+                .fromTo("#scroll-p3", {y: 1000}, {y: -500, opacity: 0}, "<")
 
                 .fromTo("#chart-15", {opacity: maxOpacity}, {opacity: 0})
-
-                .set("#scroll-p3", {opacity: 1}, "<")
-                .fromTo("#scroll-p3", {y: 1000}, {y: -500}, "<")
-                .set("#scroll-p3", {opacity: 0})
 
                 .fromTo("#last-p", {opacity: 0}, {opacity: 1})
     });
     ScrollTrigger.create({
         trigger: ".phone",
         start: "top top+=380px",
-        // start: "bottom 1000",
         end: "bottom bottom",
         markers: markersFlag,
         scrub: true,

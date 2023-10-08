@@ -298,7 +298,6 @@ strong {
         .flourish-embed {
           position: absolute;
           margin: 0 auto;
-          //height: 80%;
 
           left: 50%; //起始是在body中，横向距左50%的位置
           top: 50%; //起始是在body中，纵向距上50%的位置，这个点相当于body的中心点，div的左上角的定位
@@ -316,22 +315,26 @@ strong {
           top: 50%; //起始是在body中，纵向距上50%的位置，这个点相当于body的中心点，div的左上角的定位
           transform: translate(-50%, -50%);
 
-          //z-index: 0;
+          z-index: 0;
         }
 
         .scroll-p {
           margin: 0 auto;
-          width: 50%;
+          width: 60%;
           //display: none;
           opacity: 0;
           background-color: @pink;
           padding: 0.5em 1em;
 
+          position: fixed;
+          left: 50%;
+          transform: translateX(-50%);
+
           /* 圆角 */
           border-radius: 10px;
           color: @black-gray;
 
-          //z-index: 1000;
+          z-index: 1;
         }
       }
 
@@ -442,9 +445,6 @@ strong {
     }
   }
 }
-
-
-
 
 /* ------------------- */
 
